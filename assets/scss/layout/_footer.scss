@@ -1,0 +1,31 @@
+footer{
+    color: $white;
+    background: $bl4ck;
+    @include pad20;
+    display: flex;
+    justify-content: center;
+  
+    & .foot{
+      @include wdt1;
+      max-width: 1440px;
+  
+       & h3{
+        font-family: 'Shrikhand',sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 1.5px;
+        @include margb20;
+       }
+       
+      & li {
+        margin-bottom: 10px;
+  
+        & i{
+          width: 15px;
+          margin-right: 10px;
+        }
+      } 
+    }
+  }
+footer a{
+    color: $white;
+}

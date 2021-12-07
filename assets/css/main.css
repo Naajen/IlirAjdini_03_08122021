@@ -1,0 +1,330 @@
+@media screen and (min-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header #logo {
+    width: 200px;
+    padding: 20px;
+  }
+  #search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #eaeaea;
+    -webkit-box-shadow: 0px 5px 12px -10px rgba(0, 0, 0, 0.57) inset;
+            box-shadow: 0px 5px 12px -10px rgba(0, 0, 0, 0.57) inset;
+  }
+  #search .search-bar {
+    padding: 20px 0;
+  }
+  #search .search-bar i {
+    font-size: 1.1em;
+    margin-left: 50px;
+    color: #353535;
+  }
+  #search .search-bar input {
+    border: none;
+    outline: none;
+    background: #eaeaea;
+    font-size: 1.1em;
+    margin-left: 20px;
+  }
+  #exploration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #f6f6f5;
+    padding: 30px 0 50px 0;
+    width: 100%;
+  }
+  #exploration h1, #exploration p {
+    width: 80%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #exploration a {
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    max-width: 226px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'roboto', sans-serif;
+    color: #ffff;
+    margin-top: 20px;
+  }
+  #exploration a:hover {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9a8), to(#9256dca8));
+    background: linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+  }
+  #fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    height: 440px;
+    position: relative;
+  }
+  #fonction ul {
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #fonction ul li {
+    background: #f6f6f5;
+    height: 28%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 25px;
+    -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+    color: #7e7e7e;
+  }
+  #fonction ul li:hover {
+    color: #9356DC;
+    background-color: #F5EDFF;
+  }
+  #fonction ul li span {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #9356DC;
+    color: #ffff;
+  }
+  #fonction ul li p {
+    color: #353535;
+    font-weight: 600;
+  }
+  #fonction ul li i {
+    padding: 20px 20px 20px 35px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    background: #f6f6f5;
+  }
+  #restaurants h1 {
+    margin-bottom: 20px;
+  }
+  #restaurants ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    background: #ffff;
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+  }
+  #restaurants ul li:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+  }
+  #restaurants ul li .new {
+    position: absolute;
+    background: #99e2d0;
+    padding: 10px 15px;
+    right: 3%;
+    top: 4%;
+    font-weight: 600;
+    color: #008766;
+  }
+  #restaurants ul li figcaption {
+    padding: 15px;
+  }
+  #restaurants ul li figcaption h3 {
+    margin-bottom: 5px;
+  }
+  #restaurants ul li figcaption i {
+    position: absolute;
+    right: 7%;
+    bottom: 10%;
+    font-size: 1.5em;
+  }
+  #restaurants ul li img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #restaurants {
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  #restaurants ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #restaurants ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    width: 24%;
+  }
+}
+
+h1, h2, h3, li, p, span {
+  font-family: 'roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: none;
+  list-style: none;
+}
+
+.body-page {
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer {
+  color: #ffff;
+  background: #353535;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .foot {
+  width: 100%;
+  max-width: 1440px;
+}
+
+footer .foot h3 {
+  font-family: 'Shrikhand',sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+footer .foot li {
+  margin-bottom: 10px;
+}
+
+footer .foot li i {
+  width: 15px;
+  margin-right: 10px;
+}
+
+footer a {
+  color: #ffff;
+}
+/*# sourceMappingURL=main.css.map */

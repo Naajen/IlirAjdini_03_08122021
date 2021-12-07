@@ -1,0 +1,117 @@
+@media screen and (min-width:320px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include wdt1;
+  
+      & #logo{
+        width: 200px;
+        @include pad20
+    }
+  }  
+
+  #search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $gris;
+    box-shadow: 0px 5px 12px -10px rgba(0,0,0,0.57) inset;
+
+    & .search-bar{
+      padding: 20px 0;
+
+      & i{
+        font-size: 1.1em;
+        margin-left: 50px;
+        color:$bl4ck;
+      }
+      & input{
+        border: none;
+        outline: none;
+        background: $gris;
+        font-size: 1.1em;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  #exploration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:$backgrey;
+    padding: 30px 0 50px 0;
+    @include wdt1;
+
+    & h1, p {
+      width: 80%;
+      text-align: center;
+      padding: 10px 20px;
+    }
+    & a{
+      background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+      max-width: 226px;
+      @include pad20;
+      text-align: center;
+      border-radius: 50px;
+      font-family: 'roboto', sans-serif;
+      color: $white;
+      margin-top: 20px;
+      &:hover{
+        background:linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+      }
+    }
+  }
+
+  #fonction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include pad20;
+    margin-top:20px;
+    height: 440px;
+    position: relative;
+
+    & ul{
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & li{
+        background: $backgrey;
+        height: 28%;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        @include boxsha;
+        color: $icone;
+        &:hover{
+          color:$primaire;
+          background-color: $active;
+        }
+
+        & span{
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 10px;
+          width:25px;
+          height: 25px;
+          border-radius: 100%;
+          background: $primaire;
+          color: $white;
+        }
+        & p{
+          color: $bl4ck;
+          font-weight: 600;
+        }
+        & i{
+          padding: 20px 20px 20px 35px; 
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@media screen and (min-width:320px) {
+    #restaurants{
+        display: flex;
+        flex-direction: column;
+        @include pad20;
+        background: $backgrey;
+
+        & h1{
+            @include margb20;
+        }
+        & ul{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & li{
+                background: $white;
+                @include wdt1;
+                height: 20%;
+                border-radius: 15px;
+                @include margb20;
+                position: relative;
+                @include boxsha;
+                &:hover{
+                    transform:scale(1.03);
+                    transition: ease 0.4s;
+                }
+
+                & .new {
+                    position: absolute;
+                    background: $tertiaire;
+                    padding: 10px 15px;
+                    right: 3%;
+                    top: 4%;
+                    font-weight: 600;
+                    color:$new;
+
+                }
+                & figcaption { 
+                    padding: 15px;
+                    & h3 {
+                        margin-bottom: 5px;
+                    }
+                    & i {
+                        position: absolute;
+                        right: 7%;
+                        bottom: 10%;
+                        font-size: 1.5em;
+                    }
+                }
+                & img {
+                    width: 100%;
+                    height: 200px;
+                    border-top-left-radius:15px;
+                    border-top-right-radius:15px;
+                    object-fit:cover;
+                }
+            }
+        }
+    }
+} 
+@media screen and (min-width:1024px) {
+    #restaurants {
+        border-radius: 20px;
+        @include margb20;
+
+        & ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        & li{
+            width:49%;
+            }
+        }
+    }    
+}
+
+@media screen and (min-width:1440px) {
+    #restaurants ul{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        & li {
+            width: 24%;
+        }
+    }
+}
