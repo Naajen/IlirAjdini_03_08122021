@@ -1,4 +1,47 @@
 @media screen and (min-width:320px) {
+    .menu-page-entrees{
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            font-size: 1.1em;
+            border-bottom:#99E2D0 3.5px solid;
+            width: 11%;
+            margin-bottom: 10px;
+        }
+        & ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+
+            & .liste-page{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+                & h4{
+                    font-size: 0.9em;
+                    color:#7e7e7e;
+                    font-weight: 400;
+                    margin-top: 10px;
+                }
+                & .fas{
+                    display: none;
+                }
+                & p{
+                    position: absolute;
+                    right: 3%;
+                    bottom: 20%;
+                }
+            }
+        }   
+
+    }
     .menu-page{
         padding:20px;
         display: flex;
@@ -11,10 +54,10 @@
             margin-bottom: 10px;
         }
         & ul {
-            height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: 300px;
 
             & .liste-page{
                 position: relative;
@@ -44,8 +87,8 @@
 }
 @media screen and (min-width:1024px) {
     .menu-pc{
-      display: flex;  
-        & .menu-page {
+      display: flex;
+        & .menu-page, .menu-page-entrees {
             width: 30%;
             & .liste-page{
                 padding:20px 5px 20px 15px;

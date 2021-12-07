@@ -79,6 +79,64 @@
 }
 
 @media screen and (min-width: 320px) {
+  .menu-page-entrees {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-page-entrees h2 {
+    font-size: 1.1em;
+    border-bottom: #99E2D0 3.5px solid;
+    width: 11%;
+    margin-bottom: 10px;
+  }
+  .menu-page-entrees ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 400px;
+  }
+  .menu-page-entrees ul .liste-page {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+  }
+  .menu-page-entrees ul .liste-page h4 {
+    font-size: 0.9em;
+    color: #7e7e7e;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .menu-page-entrees ul .liste-page .fas {
+    display: none;
+  }
+  .menu-page-entrees ul .liste-page p {
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+  }
   .menu-page {
     padding: 20px;
     display: -webkit-box;
@@ -96,7 +154,6 @@
     margin-bottom: 10px;
   }
   .menu-page ul {
-    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,6 +164,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 300px;
   }
   .menu-page ul .liste-page {
     position: relative;
@@ -145,10 +203,10 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-pc .menu-page {
+  .menu-pc .menu-page, .menu-pc .menu-page-entrees {
     width: 30%;
   }
-  .menu-pc .menu-page .liste-page {
+  .menu-pc .menu-page .liste-page, .menu-pc .menu-page-entrees .liste-page {
     padding: 20px 5px 20px 15px;
   }
 }
