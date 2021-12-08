@@ -1,8 +1,7 @@
 @media screen and (min-width:320px) {
     .menu-page-entrees{
-        padding:20px;
-        display: flex;
-        flex-direction: column;
+        @include pad20;
+        @include flexcol;
 
         & h2 {
             font-size: 1.1em;
@@ -11,19 +10,17 @@
             margin-bottom: 10px;
         }
         & ul {
-            display: flex;
-            flex-direction: column;
+            @include flexcol;
             justify-content: space-between;
             height: 400px;
 
             & .liste-page{
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                background: white;
-                padding: 20px;
+                @include flexcol;
+                background: $white;
+                @include pad20;
                 border-radius: 20px;
-                box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+                @include boxsha;
                 & h4{
                     font-size: 0.9em;
                     color:#7e7e7e;
@@ -43,9 +40,8 @@
 
     }
     .menu-page{
-        padding:20px;
-        display: flex;
-        flex-direction: column;
+        @include pad20;
+        @include flexcol;
 
         & h2 {
             font-size: 1.1em;
@@ -54,19 +50,17 @@
             margin-bottom: 10px;
         }
         & ul {
-            display: flex;
-            flex-direction: column;
+            @include flexcol;
             justify-content: space-between;
             height: 300px;
 
             & .liste-page{
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                background: white;
-                padding: 20px;
+                @include flexcol;
+                background: $white;
+                @include pad20;
                 border-radius: 20px;
-                box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+                @include boxsha;
                 & h4{
                     font-size: 0.9em;
                     color:#7e7e7e;

@@ -1,5 +1,5 @@
 .img-pages{
-    width: 100%;
+    @include wdt1;
     height: 300px;
     object-fit: cover;
 }
@@ -51,19 +51,17 @@
             width: 190px;
             border:none;
             max-width: 226px;
-            padding: 20px;
+            @include pad20;
             text-align: center;
             border-radius: 50px;
             font-family: 'roboto', sans-serif;
             color: white;
             margin: 20px 0 60px 0;
             font-size: 1.1em;
-            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            @include boxsha;
             
             &:hover{
-                background: linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
-                transform:scale(1.1);
-                transition: ease 0.3s;
+                @include light-btn;
             }
         }
     }

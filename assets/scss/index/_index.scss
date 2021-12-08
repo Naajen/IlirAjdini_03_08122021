@@ -1,8 +1,6 @@
 @media screen and (min-width:320px) {
   header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexstart;
     @include wdt1;
   
       & #logo{
@@ -12,9 +10,7 @@
   }  
 
   #search {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flexstart;
     background-color: $gris;
     box-shadow: 0px 5px 12px -10px rgba(0,0,0,0.57) inset;
 
@@ -37,9 +33,7 @@
   }
 
   #exploration {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flexstart;
     background:$backgrey;
     padding: 30px 0 50px 0;
     @include wdt1;
@@ -51,24 +45,22 @@
     }
     & a{
       @include lineargrad;
-      max-width: 226px;
+      @include boxsha;
       @include pad20;
+      max-width: 226px;
       text-align: center;
       border-radius: 50px;
       font-family: 'roboto', sans-serif;
       color: $white;
       margin-top: 20px;
       &:hover{
-        @include linearlight;
-        transform:scale(1.1);
-        transition: ease 0.3s;
+        @include light-btn;
       }
     }
   }
 
   #fonction{
-    display: flex;
-    flex-direction: column;
+    @include flexcol;
     justify-content: space-around;
     @include pad20;
     margin-top:20px;
@@ -77,8 +69,7 @@
 
     & ul{
       height: 80%;
-      display: flex;
-      flex-direction: column;
+      @include flexcol;
       justify-content: space-between;
 
       & li{

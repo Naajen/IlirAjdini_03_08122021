@@ -20,3 +20,20 @@
 @mixin linearlight {
     background:linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
 }
+
+@mixin light-btn {
+    @include linearlight;
+    transform:scale(1.1);
+    transition: ease 0.3s;
+}
+
+@mixin flexstart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flexcol {
+    display: flex;
+    flex-direction: column;
+}
