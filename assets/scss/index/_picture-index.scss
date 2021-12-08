@@ -63,10 +63,7 @@
     #restaurants {
         border-radius: 20px;
         @include margb20;
-        & h1 {
-            padding-bottom: 20px;
-        }
-
+        
         & ul{
         flex-direction: row;
         flex-wrap: wrap;

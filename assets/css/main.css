@@ -263,9 +263,6 @@
     border-radius: 20px;
     margin-bottom: 20px;
   }
-  #restaurants h1 {
-    padding-bottom: 20px;
-  }
   #restaurants ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
