@@ -13,3 +13,10 @@
 @mixin margb20 {
     margin-bottom: 20px;
 }
+
+@mixin lineargrad {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+@mixin linearlight {
+    background:linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+}

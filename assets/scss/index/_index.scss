@@ -31,7 +31,7 @@
         outline: none;
         background: $gris;
         font-size: 1.1em;
-        margin-left: 20px;
+        padding-left: 20px;
       }
     }
   }
@@ -50,7 +50,7 @@
       padding: 10px 20px;
     }
     & a{
-      background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+      @include lineargrad;
       max-width: 226px;
       @include pad20;
       text-align: center;
@@ -59,7 +59,9 @@
       color: $white;
       margin-top: 20px;
       &:hover{
-        background:linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+        @include linearlight;
+        transform:scale(1.1);
+        transition: ease 0.3s;
       }
     }
   }
@@ -110,6 +112,27 @@
         }
         & i{
           padding: 20px 20px 20px 35px; 
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  #fonction { 
+    height: 110px;
+    position: relative;
+      & h1{
+        padding-bottom: 10px;
+      }
+      & ul{
+      display: flex;
+      flex-direction: row;
+
+        & li{
+        width: 30%;
+        height: 100%;
+        & span{
+          position: relative;
         }
       }
     }

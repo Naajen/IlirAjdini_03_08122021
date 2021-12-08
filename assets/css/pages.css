@@ -76,6 +76,14 @@
     -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
             box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
   }
+  .commander .submit-choice:hover {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9a8), to(#9256dca8));
+    background: linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+  }
 }
 
 @media screen and (min-width: 320px) {

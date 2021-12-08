@@ -58,7 +58,13 @@
             color: white;
             margin: 20px 0 60px 0;
             font-size: 1.1em;
-            box-shadow: 0.27em 0.55em 0.55em #d5d5d5
+            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            
+            &:hover{
+                background: linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+                transform:scale(1.1);
+                transition: ease 0.3s;
+            }
         }
     }
 }

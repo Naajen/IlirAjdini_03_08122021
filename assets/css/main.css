@@ -44,7 +44,7 @@
     outline: none;
     background: #eaeaea;
     font-size: 1.1em;
-    margin-left: 20px;
+    padding-left: 20px;
   }
   #exploration {
     display: -webkit-box;
@@ -80,6 +80,10 @@
   #exploration a:hover {
     background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9a8), to(#9256dca8));
     background: linear-gradient(to bottom right, #ff79d9a8, #9256dca8);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
   }
   #fonction {
     display: -webkit-box;
@@ -151,6 +155,32 @@
   }
   #fonction ul li i {
     padding: 20px 20px 20px 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #fonction {
+    height: 110px;
+    position: relative;
+  }
+  #fonction h1 {
+    padding-bottom: 10px;
+  }
+  #fonction ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #fonction ul li {
+    width: 30%;
+    height: 100%;
+  }
+  #fonction ul li span {
+    position: relative;
   }
 }
 
@@ -232,6 +262,9 @@
   #restaurants {
     border-radius: 20px;
     margin-bottom: 20px;
+  }
+  #restaurants h1 {
+    padding-bottom: 20px;
   }
   #restaurants ul {
     -webkit-box-orient: horizontal;
