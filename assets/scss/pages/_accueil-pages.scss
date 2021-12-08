@@ -22,7 +22,7 @@
     }
     .body-plat{
         position: relative;
-        background:#f2f2f2;
+        background:$white;
         margin-top: -40px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
@@ -47,7 +47,7 @@
         justify-content: center;
 
         & .submit-choice{
-            background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+            @include lineargrad;
             width: 190px;
             border:none;
             max-width: 226px;
