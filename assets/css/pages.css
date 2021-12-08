@@ -23,6 +23,61 @@ a:visited {
   margin: auto;
 }
 
+/*#loading{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #0000003f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & #load{
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 5em;
+        align-items: center;
+        transition: ease-in-out 3s all;
+    }
+    & #pulse-card{
+        display: flex;
+        align-items: center;
+        & #pulse-1 {     
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $primaire;
+            margin: 20px;
+            box-shadow: 0 0 0 0 $primaire;
+            animation: pulse 1.2s infinite;
+        }
+        & #pulse-2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 20px;
+            background: $secondaire;  
+            box-shadow: 0 0 0 0 $secondaire;
+            animation: pulse 1.4s infinite;     
+        }
+        & #pulse-3 { 
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 20px;
+            background: $tertiaire;
+            box-shadow: 0 0 0 0 $tertiaire;
+            animation: pulse 1.6s infinite;      
+        }
+    }    
+}
+ @keyframes pulse {
+     to {
+        box-shadow:0 0 0 10px #9256dc07;
+     }
+ }
+*/
 .img-pages {
   width: 100%;
   height: 300px;
