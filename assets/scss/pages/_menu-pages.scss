@@ -21,6 +21,20 @@
                 @include pad20;
                 border-radius: 20px;
                 @include boxsha;
+                animation: slide-liste 1s both;
+                &:nth-child(2n+1){
+                    animation-delay: 0.3s;
+                }
+                &:nth-child(2n+2){
+                    animation-delay: 0.5s;
+                }
+                &:nth-child(2n+3){
+                    animation-delay: 0.7s;
+                }
+                &:nth-child(2n+4){
+                    animation-delay: 0.9s;
+                }
+                
                 & h4{
                     font-size: 0.9em;
                     color:#7e7e7e;
@@ -55,12 +69,21 @@
             height: 300px;
 
             & .liste-page{
-                position: relative;
                 @include flexcol;
                 background: $white;
                 @include pad20;
                 border-radius: 20px;
                 @include boxsha;
+                animation: slide-liste 1s both;
+                &:nth-child(2n+1){
+                    animation-delay: 0.3s;
+                }
+                &:nth-child(2n+2){
+                    animation-delay: 0.5s;
+                }
+                &:nth-child(2n+3){
+                    animation-delay: 0.7s;
+                }
                 & h4{
                     font-size: 0.9em;
                     color:#7e7e7e;
@@ -90,3 +113,5 @@
         }
     }
 }
+
+

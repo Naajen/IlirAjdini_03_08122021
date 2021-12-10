@@ -14,7 +14,7 @@
     & #load{
         font-family: 'Shrikhand', sans-serif;
         align-items: center;
-        animation: float 8s infinite;    
+        animation: logo-float 8s infinite;    
     }
     
     & #pulse-card{
@@ -25,23 +25,23 @@
             @include circle-anim;
             background: $primaire;
             box-shadow: 0 0 0 0 $primaire;
-            animation: pulse 1.2s infinite;
+            animation: pulsing 1.2s infinite;
         }
         & #pulse-2 {
             @include circle-anim;
             background: $secondaire;  
             box-shadow: 0 0 0 0 $secondaire;
-            animation: pulse 1.4s infinite;     
+            animation: pulsing 1.4s infinite;     
         }
         & #pulse-3 { 
             @include circle-anim;
             background: $tertiaire;
             box-shadow: 0 0 0 0 $tertiaire;
-            animation: pulse 1.6s infinite;      
+            animation: pulsing 1.6s infinite;      
         }
     }    
 }
-@keyframes pulse {
+@keyframes pulsing {
     to {
         box-shadow:0 0 0 15px #9256dc07;
     }
@@ -58,7 +58,7 @@
         z-index: -1;
     }
 }
-@keyframes float {
+@keyframes logo-float {
     0%{
         transform: translateY(0px);
         font-size: 1em;
@@ -67,5 +67,16 @@
         transform: translateY(-350px);
         opacity: 0;
         font-size: 2.5em;
+    }
+}
+
+@keyframes slide-liste {
+    0%{
+        transform: translate3d(0, 20%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: none; 
+        opacity: 1;
     }
 }

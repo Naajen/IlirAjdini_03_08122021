@@ -156,6 +156,10 @@ a:visited {
   #fonction ul li:hover {
     color: #9356DC;
     background-color: #F5EDFF;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
   }
   #fonction ul li span {
     position: absolute;
@@ -249,8 +253,8 @@ a:visited {
             box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
   }
   #restaurants ul li:hover {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
     -webkit-transition: ease 0.4s;
     transition: ease 0.4s;
   }
@@ -352,8 +356,8 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: float 8s infinite;
-          animation: float 8s infinite;
+  -webkit-animation: logo-float 8s infinite;
+          animation: logo-float 8s infinite;
 }
 
 #loading #pulse-card {
@@ -373,8 +377,8 @@ a:visited {
   background: #9356DC;
   -webkit-box-shadow: 0 0 0 0 #9356DC;
           box-shadow: 0 0 0 0 #9356DC;
-  -webkit-animation: pulse 1.2s infinite;
-          animation: pulse 1.2s infinite;
+  -webkit-animation: pulsing 1.2s infinite;
+          animation: pulsing 1.2s infinite;
 }
 
 #loading #pulse-card #pulse-2 {
@@ -385,8 +389,8 @@ a:visited {
   background: #FF79da;
   -webkit-box-shadow: 0 0 0 0 #FF79da;
           box-shadow: 0 0 0 0 #FF79da;
-  -webkit-animation: pulse 1.4s infinite;
-          animation: pulse 1.4s infinite;
+  -webkit-animation: pulsing 1.4s infinite;
+          animation: pulsing 1.4s infinite;
 }
 
 #loading #pulse-card #pulse-3 {
@@ -397,18 +401,18 @@ a:visited {
   background: #99e2d0;
   -webkit-box-shadow: 0 0 0 0 #99e2d0;
           box-shadow: 0 0 0 0 #99e2d0;
-  -webkit-animation: pulse 1.6s infinite;
-          animation: pulse 1.6s infinite;
+  -webkit-animation: pulsing 1.6s infinite;
+          animation: pulsing 1.6s infinite;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes pulsing {
   to {
     -webkit-box-shadow: 0 0 0 15px #9256dc07;
             box-shadow: 0 0 0 15px #9256dc07;
   }
 }
 
-@keyframes pulse {
+@keyframes pulsing {
   to {
     -webkit-box-shadow: 0 0 0 15px #9256dc07;
             box-shadow: 0 0 0 15px #9256dc07;
@@ -441,7 +445,7 @@ a:visited {
   }
 }
 
-@-webkit-keyframes float {
+@-webkit-keyframes logo-float {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -455,7 +459,7 @@ a:visited {
   }
 }
 
-@keyframes float {
+@keyframes logo-float {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -466,6 +470,32 @@ a:visited {
             transform: translateY(-350px);
     opacity: 0;
     font-size: 2.5em;
+  }
+}
+
+@-webkit-keyframes slide-liste {
+  0% {
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-liste {
+  0% {
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
   }
 }
 

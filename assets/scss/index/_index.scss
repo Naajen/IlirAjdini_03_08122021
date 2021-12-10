@@ -82,6 +82,8 @@
         &:hover{
           color:$primaire;
           background-color: $active;
+          transform:scale(1.05);
+          transition: ease 0.4s;
         }
 
         & span{

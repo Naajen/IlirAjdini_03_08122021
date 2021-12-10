@@ -155,6 +155,24 @@ a:visited {
     border-radius: 20px;
     -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
             box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+    -webkit-animation: slide-liste 1s both;
+            animation: slide-liste 1s both;
+  }
+  .menu-page-entrees ul .liste-page:nth-child(2n+1) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .menu-page-entrees ul .liste-page:nth-child(2n+2) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .menu-page-entrees ul .liste-page:nth-child(2n+3) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .menu-page-entrees ul .liste-page:nth-child(2n+4) {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .menu-page-entrees ul .liste-page h4 {
     font-size: 0.9em;
@@ -200,7 +218,6 @@ a:visited {
     height: 300px;
   }
   .menu-page ul .liste-page {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,6 +230,20 @@ a:visited {
     border-radius: 20px;
     -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
             box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+    -webkit-animation: slide-liste 1s both;
+            animation: slide-liste 1s both;
+  }
+  .menu-page ul .liste-page:nth-child(2n+1) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .menu-page ul .liste-page:nth-child(2n+2) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .menu-page ul .liste-page:nth-child(2n+3) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
   }
   .menu-page ul .liste-page h4 {
     font-size: 0.9em;
@@ -310,8 +341,8 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: float 8s infinite;
-          animation: float 8s infinite;
+  -webkit-animation: logo-float 8s infinite;
+          animation: logo-float 8s infinite;
 }
 
 #loading #pulse-card {
@@ -331,8 +362,8 @@ footer a {
   background: #9356DC;
   -webkit-box-shadow: 0 0 0 0 #9356DC;
           box-shadow: 0 0 0 0 #9356DC;
-  -webkit-animation: pulse 1.2s infinite;
-          animation: pulse 1.2s infinite;
+  -webkit-animation: pulsing 1.2s infinite;
+          animation: pulsing 1.2s infinite;
 }
 
 #loading #pulse-card #pulse-2 {
@@ -343,8 +374,8 @@ footer a {
   background: #FF79da;
   -webkit-box-shadow: 0 0 0 0 #FF79da;
           box-shadow: 0 0 0 0 #FF79da;
-  -webkit-animation: pulse 1.4s infinite;
-          animation: pulse 1.4s infinite;
+  -webkit-animation: pulsing 1.4s infinite;
+          animation: pulsing 1.4s infinite;
 }
 
 #loading #pulse-card #pulse-3 {
@@ -355,18 +386,18 @@ footer a {
   background: #99e2d0;
   -webkit-box-shadow: 0 0 0 0 #99e2d0;
           box-shadow: 0 0 0 0 #99e2d0;
-  -webkit-animation: pulse 1.6s infinite;
-          animation: pulse 1.6s infinite;
+  -webkit-animation: pulsing 1.6s infinite;
+          animation: pulsing 1.6s infinite;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes pulsing {
   to {
     -webkit-box-shadow: 0 0 0 15px #9256dc07;
             box-shadow: 0 0 0 15px #9256dc07;
   }
 }
 
-@keyframes pulse {
+@keyframes pulsing {
   to {
     -webkit-box-shadow: 0 0 0 15px #9256dc07;
             box-shadow: 0 0 0 15px #9256dc07;
@@ -399,7 +430,7 @@ footer a {
   }
 }
 
-@-webkit-keyframes float {
+@-webkit-keyframes logo-float {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -413,7 +444,7 @@ footer a {
   }
 }
 
-@keyframes float {
+@keyframes logo-float {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -424,6 +455,32 @@ footer a {
             transform: translateY(-350px);
     opacity: 0;
     font-size: 2.5em;
+  }
+}
+
+@-webkit-keyframes slide-liste {
+  0% {
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-liste {
+  0% {
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=pages.css.map */
