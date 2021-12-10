@@ -156,10 +156,6 @@ a:visited {
   #fonction ul li:hover {
     color: #9356DC;
     background-color: #F5EDFF;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-transition: ease 0.4s;
-    transition: ease 0.4s;
   }
   #fonction ul li span {
     position: absolute;
@@ -211,6 +207,8 @@ a:visited {
   }
   #fonction ul li span {
     position: relative;
+    margin-left: 15px;
+    padding: 5px;
   }
 }
 
@@ -499,6 +497,18 @@ a:visited {
   }
 }
 
+/*.heart__all{
+    animation: heart 1.5s ;
+}
+
+@keyframes heart {
+    0%{
+        color:none;
+    }
+    100%{
+        color: brown;
+    }
+}*/
 footer {
   color: #ffff;
   background: #353535;

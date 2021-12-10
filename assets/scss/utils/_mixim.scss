@@ -7,7 +7,7 @@
 }
 
 @mixin boxsha {
-    box-shadow: 0.27em 0.55em 0.55em #d5d5d5 ;
+    box-shadow: 0.27em 0.55em 0.55em $boxshadow ;
 }
 
 @mixin margb20 {

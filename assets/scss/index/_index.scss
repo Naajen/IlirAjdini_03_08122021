@@ -82,8 +82,6 @@
         &:hover{
           color:$primaire;
           background-color: $active;
-          transform:scale(1.05);
-          transition: ease 0.4s;
         }
 
         & span{
@@ -123,8 +121,11 @@
         & li{
         width: 30%;
         height: 100%;
+
         & span{
-          position: relative;
+          position:relative;
+          margin-left: 15px;
+          padding: 5px;
         }
       }
     }
