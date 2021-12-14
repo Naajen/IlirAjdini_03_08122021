@@ -212,180 +212,6 @@ a:visited {
   }
 }
 
-@media screen and (min-width: 320px) {
-  #restaurants {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 20px;
-    background: #f6f6f5;
-  }
-  #restaurants .add-fav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: none;
-    background: none;
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-    font-size: 1rem;
-  }
-  #restaurants .add-fav i {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  #restaurants .add-fav .heart__1 {
-    position: relative;
-    -webkit-transition: all 0.75s;
-    transition: all 0.75s;
-    z-index: 2;
-    cursor: pointer;
-  }
-  #restaurants .add-fav .heart__1:hover {
-    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  #restaurants .add-fav .heart__1:hover + .heart__2 {
-    visibility: visible;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    opacity: 1;
-    font-size: 1.4em;
-    -webkit-animation-name: zoom-h;
-    animation-name: zoom-h;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  #restaurants .add-fav .heart__2 {
-    position: absolute;
-    -webkit-transition: linear 0.1s ease-in;
-    transition: linear 0.1s ease-in;
-    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 2em;
-    z-index: 1;
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 20px;
-  }
-  ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  ul li {
-    background: #ffff;
-    width: 100%;
-    height: 20%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    position: relative;
-    -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
-            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
-  }
-  ul li:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-transition: ease 0.4s;
-    transition: ease 0.4s;
-  }
-  ul li .new {
-    position: absolute;
-    background: #99e2d0;
-    padding: 10px 15px;
-    right: 3%;
-    top: 4%;
-    font-weight: 600;
-    color: #008766;
-  }
-  ul li figcaption {
-    padding: 15px;
-  }
-  ul li figcaption h3 {
-    margin-bottom: 5px;
-  }
-  ul li i {
-    position: absolute;
-    right: 7%;
-    bottom: 10%;
-    font-size: 1.5em;
-  }
-  ul img {
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #restaurants {
-    border-radius: 20px;
-    margin-bottom: 20px;
-  }
-  #restaurants ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #restaurants ul li {
-    width: 49%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  #restaurants ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #restaurants ul li {
-    width: 24%;
-  }
-}
-
 #loading {
   z-index: 3;
   width: 100%;
@@ -462,6 +288,186 @@ a:visited {
           box-shadow: 0 0 0 0 #99e2d0;
   -webkit-animation: pulsing 1.6s infinite;
           animation: pulsing 1.6s infinite;
+}
+
+@media screen and (min-width: 320px) {
+  #restaurants {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    background: #f6f6f5;
+  }
+  #restaurants h1 {
+    margin-bottom: 20px;
+  }
+  #restaurants ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    background: #ffff;
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+            box-shadow: 0.27em 0.55em 0.55em #d5d5d5;
+  }
+  #restaurants ul li:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+  }
+  #restaurants ul li .new {
+    position: absolute;
+    background: #99e2d0;
+    padding: 10px 15px;
+    right: 3%;
+    top: 4%;
+    font-weight: 600;
+    color: #008766;
+  }
+  #restaurants ul li figcaption {
+    padding: 15px;
+  }
+  #restaurants ul li figcaption h3 {
+    margin-bottom: 5px;
+  }
+  #restaurants ul li i {
+    position: absolute;
+    right: 7%;
+    bottom: 10%;
+    font-size: 1.5em;
+  }
+  #restaurants ul img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #restaurants {
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  #restaurants ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #restaurants ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #restaurants ul li {
+    width: 24%;
+  }
+}
+
+.add-fav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  font-size: 1rem;
+}
+
+.add-fav i {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.add-fav .heart__1 {
+  position: relative;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.add-fav .heart__1:hover {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.add-fav .heart__1:hover + .heart__2 {
+  visibility: visible;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 1;
+  font-size: 1.4em;
+  -webkit-animation-name: zoom-h;
+  animation-name: zoom-h;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.add-fav .heart__2 {
+  position: absolute;
+  -webkit-transition: linear 0.1s ease-in;
+  transition: linear 0.1s ease-in;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 2em;
+  z-index: 1;
+  text-align: center;
 }
 
 @-webkit-keyframes pulsing {
@@ -558,18 +564,50 @@ a:visited {
   }
 }
 
-/*.heart__all{
-    animation: heart 1.5s ;
+@-webkit-keyframes zoom-index {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
-@keyframes heart {
-    0%{
-        color:none;
-    }
-    100%{
-        color: brown;
-    }
-}*/
+@keyframes zoom-index {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoom-h {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-h {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 footer {
   color: #ffff;
   background: #353535;

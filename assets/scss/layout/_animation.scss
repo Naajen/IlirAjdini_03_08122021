@@ -1,46 +1,3 @@
-#loading{
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background:#353535;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 1;
-    animation: loading-opacity 100ms 2500ms both;
-
-    & #load{
-        font-family: 'Shrikhand', sans-serif;
-        align-items: center;
-        animation: logo-float 8s infinite;    
-    }
-    
-    & #pulse-card{
-        display: flex;
-        align-items: center;
-
-        & #pulse-1 {     
-            @include circle-anim;
-            background: $primaire;
-            box-shadow: 0 0 0 0 $primaire;
-            animation: pulsing 1.2s infinite;
-        }
-        & #pulse-2 {
-            @include circle-anim;
-            background: $secondaire;  
-            box-shadow: 0 0 0 0 $secondaire;
-            animation: pulsing 1.4s infinite;     
-        }
-        & #pulse-3 { 
-            @include circle-anim;
-            background: $tertiaire;
-            box-shadow: 0 0 0 0 $tertiaire;
-            animation: pulsing 1.6s infinite;      
-        }
-    }    
-}
 @keyframes pulsing {
     to {
         box-shadow:0 0 0 15px #9256dc07;
@@ -80,16 +37,40 @@
         opacity: 1;
     }
 }
-
-/*.heart__all{
-    animation: heart 1.5s ;
+@-webkit-keyframes zoom-index {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50%{
+        opacity: 1;
+    }
+}
+@keyframes zoom-index {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
-@keyframes heart {
-    0%{
-        color:none;
+@-webkit-keyframes zoom-h {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
     }
-    100%{
-        color: brown;
+    50% {
+      opacity: 1;
     }
-}*/
+}
+@keyframes zoom-h {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+}

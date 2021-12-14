@@ -17,7 +17,7 @@
 
             & .liste-page{
                 position: relative;
-                @include flexcol
+                @include flexcol;
                 background: $white;
                 @include pad20;
                 border-radius: 20px;
@@ -27,6 +27,7 @@
                 opacity: 0;
                 width: 90%;
                 transform: translateX(100%);
+
                 &:hover{
                     width: 74%;
                     overflow: visible;
@@ -231,5 +232,58 @@
                 }
             }
         }
+    }
+}
+.icon-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background:none;
+    right: 15px;
+    bottom: 20px;
+    font-size: 1rem;
+
+    & i{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    & .heart__1{
+        position: relative;
+        transition: all 0.75s;
+        z-index: 2;
+        cursor: pointer;
+        
+        &:hover{
+            background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+    & .heart__1:hover + .heart__2 {
+        visibility: visible;
+        transform-origin: center;
+        opacity: 1;
+        font-size: 1.4em;
+        -webkit-animation-name: zoom-h;
+                animation-name: zoom-h;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+      }
+    & .heart__2{
+        position: absolute;
+        transition: linear 0.1s ease-in;
+        background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+        background-clip: text;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 2em;
+        z-index: 1;
+        text-align: center;
     }
 }
