@@ -16,7 +16,7 @@
 
             & .liste-page{
                 position: relative;
-                @include flexcol;
+                @include flexcol
                 background: $white;
                 @include pad20;
                 border-radius: 20px;
@@ -35,6 +35,10 @@
                 &:nth-child(2n+4){
                     animation-delay: 0.9s;
                 }
+                & .checked{
+                    position: absolute;
+                }
+
                 & h4{
                     font-size: 0.9em;
                     color:#7e7e7e;
@@ -44,8 +48,9 @@
                 }
                 & p{
                     position: absolute;
-                    right: 3%;
+                    right: 5%;
                     bottom: 20%;
+                    z-index: 3;
                 }
             }
         }   
