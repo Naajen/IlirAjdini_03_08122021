@@ -49,6 +49,7 @@
                         right: 7%;
                         bottom: 10%;
                         font-size: 1.5em;
+                        margin-right: 12px;
                     }
                 }
                 & img {
@@ -105,7 +106,6 @@
         text-align: center;
     }
     & .heart__1{
-        position: relative;
         transition: all 0.75s;
         z-index: 2;
         cursor: pointer;
@@ -122,12 +122,8 @@
         transform-origin: center;
         opacity: 1;
         font-size: 1.4em;
-        -webkit-animation-name: zoom-h;
-                animation-name: zoom-h;
-        -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
+        animation: zoom-h 1s both;
+
       }
     & .heart__2{
         position: absolute;
