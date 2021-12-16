@@ -28,7 +28,7 @@
     }
     & .heart__1:hover + .heart__2 {
         visibility: visible;
-        transform-origin: center;
+        transform-origin: bottom;
         opacity: 1;
         font-size: 1.4em;
         animation: zoom-h 1s both;

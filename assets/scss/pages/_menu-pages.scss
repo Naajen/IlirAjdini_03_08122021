@@ -22,22 +22,31 @@
                 @include boxsha;
                 animation: slide-liste 1s both;
                 overflow:hidden;
+                &:hover > p {
+                    transform: translateX(-10%);
+                }
+                &:hover > .checked{
+                    transform: translate(0);
+                }
                 
                 & >div:first-child{
-                    padding: 20px;
-                    width: 80%;
+                    padding:20px 0 20px 20px;
                     overflow:hidden;
+                    font-size: 0.9em;
+                    width: 300px;
 
                     & >h3:first-child{
                         margin-bottom: 10px;
                     }
                     & h4{
-                        font-size: 0.9em;
+                        font-size: 0.8em;
                     }
                 }
                 & p{
-                    align-self:flex-end;
-                    padding:0 10px 20px 5px;
+                    align-self: flex-end;
+                    padding: 0 0 20px 20px;
+                    transform: translateX(100%);
+                    transition: all 400ms ease-in-out;
                 }
                 & .checked{
                     background: $tertiaire;
@@ -45,10 +54,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 1.3em;
-                    width:20%;
-                }
+                    font-size: 1.5em;
+                    transform: translateX(400px);
+                    width: 20%;
+                    transition: all 400ms ease-in-out;
 
+                    & .fa-check-circle{
+                        transition: ease-in-out 1.5s all;
+                        animation: rotation 2s infinite;
+                    }
+                }
                 &:nth-child(2n+1){
                     animation-delay: 0.3s;
                 }
@@ -80,8 +95,14 @@
 @media screen and (min-width:1024px) {
     .menu-pc{
       display: flex;
-        & .menu-page, .menu-page-entrees {
+        & .menu-page{
             width: 30%;
+            & h3{
+                font-size: 0.9em;
+            }
+            & h4{
+                font-size: 0.8em;
+            }
         }
     }
 }

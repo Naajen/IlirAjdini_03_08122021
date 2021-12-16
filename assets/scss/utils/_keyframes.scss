@@ -37,7 +37,7 @@
         opacity: 1;
     }
 }
-@-webkit-keyframes zoom-h {
+@keyframes zoom-h {
     0% {
       opacity: 0;
       transform: scale3d(0.3, 0.3, 0.3);
@@ -46,12 +46,12 @@
       opacity: 1;
     }
 }
-@keyframes zoom-h {
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
     }
-    50% {
-      opacity: 1;
+    100% {
+        transform: rotate(360deg);
     }
 }

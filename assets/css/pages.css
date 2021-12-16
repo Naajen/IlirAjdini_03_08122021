@@ -161,21 +161,34 @@ a:visited {
             animation: slide-liste 1s both;
     overflow: hidden;
   }
+  .menu-page ul .liste-page:hover > p {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  .menu-page ul .liste-page:hover > .checked {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
   .menu-page ul .liste-page > div:first-child {
-    padding: 20px;
-    width: 80%;
+    padding: 20px 0 20px 20px;
     overflow: hidden;
+    font-size: 0.9em;
+    width: 300px;
   }
   .menu-page ul .liste-page > div:first-child > h3:first-child {
     margin-bottom: 10px;
   }
   .menu-page ul .liste-page > div:first-child h4 {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .menu-page ul .liste-page p {
     -ms-flex-item-align: end;
         align-self: flex-end;
-    padding: 0 10px 20px 5px;
+    padding: 0 0 20px 20px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
   .menu-page ul .liste-page .checked {
     background: #99e2d0;
@@ -189,8 +202,18 @@ a:visited {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
     width: 20%;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  .menu-page ul .liste-page .checked .fa-check-circle {
+    -webkit-transition: ease-in-out 1.5s all;
+    transition: ease-in-out 1.5s all;
+    -webkit-animation: rotation 2s infinite;
+            animation: rotation 2s infinite;
   }
   .menu-page ul .liste-page:nth-child(2n+1) {
     -webkit-animation-delay: 0.3s;
@@ -228,8 +251,14 @@ a:visited {
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-pc .menu-page, .menu-pc .menu-page-entrees {
+  .menu-pc .menu-page {
     width: 30%;
+  }
+  .menu-pc .menu-page h3 {
+    font-size: 0.9em;
+  }
+  .menu-pc .menu-page h4 {
+    font-size: 0.8em;
   }
 }
 
@@ -386,6 +415,28 @@ footer a {
   }
 }
 
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .add-fav {
   position: absolute;
 }
@@ -428,8 +479,8 @@ footer a {
 
 .icon-heart .heart__1:hover + .heart__2, .add-fav .heart__1:hover + .heart__2 {
   visibility: visible;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   opacity: 1;
   font-size: 1.4em;
   -webkit-animation: zoom-h 1s both;
