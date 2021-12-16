@@ -169,6 +169,9 @@ a:visited {
   .menu-page ul .liste-page > div:first-child > h3:first-child {
     margin-bottom: 10px;
   }
+  .menu-page ul .liste-page > div:first-child h4 {
+    font-size: 0.9em;
+  }
   .menu-page ul .liste-page p {
     -ms-flex-item-align: end;
         align-self: flex-end;
