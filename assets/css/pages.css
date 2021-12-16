@@ -233,67 +233,6 @@ a:visited {
   }
 }
 
-.icon-heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background: none;
-  right: 15px;
-  bottom: 20px;
-  font-size: 1rem;
-}
-
-.icon-heart i {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.icon-heart .heart__1 {
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.icon-heart .heart__1:hover {
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.icon-heart .heart__1:hover + .heart__2 {
-  visibility: visible;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  opacity: 1;
-  font-size: 1.4em;
-  -webkit-animation: zoom-h 1s both;
-          animation: zoom-h 1s both;
-}
-
-.icon-heart .heart__2 {
-  position: absolute;
-  -webkit-transition: linear 0.1s ease-in;
-  transition: linear 0.1s ease-in;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 2em;
-  z-index: 1;
-  text-align: center;
-}
-
 footer {
   color: #ffff;
   background: #353535;
@@ -445,5 +384,148 @@ footer a {
   50% {
     opacity: 1;
   }
+}
+
+.add-fav {
+  position: absolute;
+}
+
+.icon-heart, .add-fav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: none;
+  right: 15px;
+  bottom: 20px;
+  font-size: 1rem;
+}
+
+.icon-heart i, .add-fav i {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.icon-heart .heart__1, .add-fav .heart__1 {
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.icon-heart .heart__1:hover, .add-fav .heart__1:hover {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.icon-heart .heart__1:hover + .heart__2, .add-fav .heart__1:hover + .heart__2 {
+  visibility: visible;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 1;
+  font-size: 1.4em;
+  -webkit-animation: zoom-h 1s both;
+          animation: zoom-h 1s both;
+}
+
+.icon-heart .heart__2, .add-fav .heart__2 {
+  position: absolute;
+  -webkit-transition: linear 0.1s ease-in;
+  transition: linear 0.1s ease-in;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 2em;
+  z-index: 1;
+  text-align: center;
+}
+
+#loading {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+  -webkit-animation: loading-opacity 100ms 2500ms both;
+          animation: loading-opacity 100ms 2500ms both;
+}
+
+#loading #load {
+  font-family: 'Shrikhand', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: logo-float 8s infinite;
+          animation: logo-float 8s infinite;
+}
+
+#loading #pulse-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loading #pulse-card #pulse-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 20px;
+  background: #9356DC;
+  -webkit-box-shadow: 0 0 0 0 #9356DC;
+          box-shadow: 0 0 0 0 #9356DC;
+  -webkit-animation: pulsing 1.2s infinite;
+          animation: pulsing 1.2s infinite;
+}
+
+#loading #pulse-card #pulse-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 20px;
+  background: #FF79da;
+  -webkit-box-shadow: 0 0 0 0 #FF79da;
+          box-shadow: 0 0 0 0 #FF79da;
+  -webkit-animation: pulsing 1.4s infinite;
+          animation: pulsing 1.4s infinite;
+}
+
+#loading #pulse-card #pulse-3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 20px;
+  background: #99e2d0;
+  -webkit-box-shadow: 0 0 0 0 #99e2d0;
+          box-shadow: 0 0 0 0 #99e2d0;
+  -webkit-animation: pulsing 1.6s infinite;
+          animation: pulsing 1.6s infinite;
 }
 /*# sourceMappingURL=pages.css.map */

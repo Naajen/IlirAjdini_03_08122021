@@ -1,57 +1,92 @@
-@keyframes pulsing {
-    to {
-        box-shadow:0 0 0 15px #9256dc07;
-    }
+.add-fav{
+    position: absolute;
 }
-@keyframes loading-opacity {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0;
-        z-index: -1;
-    }
-}
-@keyframes logo-float {
-    0%{
-        transform: translateY(0px);
-        font-size: 1em;
-    }
-    50%{
-        transform: translateY(-350px);
-        opacity: 0;
-        font-size: 2.5em;
-    }
-}
+.icon-heart, .add-fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background:none;
+    right: 15px;
+    bottom: 20px;
+    font-size: 1rem;
 
-@keyframes slide-liste {
-    0%{
-        transform: translate3d(0, 20%, 0);
-        opacity: 0;
+    & i{
+        font-size: 1.4rem;
+        text-align: center;
     }
-    100%{
-        transform: none; 
+    & .heart__1{
+        transition: all 0.75s;
+        z-index: 2;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+    & .heart__1:hover + .heart__2 {
+        visibility: visible;
+        transform-origin: center;
         opacity: 1;
+        font-size: 1.4em;
+        animation: zoom-h 1s both;
+      }
+    & .heart__2{
+        position: absolute;
+        transition: linear 0.1s ease-in;
+        background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+        background-clip: text;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 2em;
+        z-index: 1;
+        text-align: center;
     }
 }
-@-webkit-keyframes zoom-h {
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
+#loading{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background:#353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    animation: loading-opacity 100ms 2500ms both;
+  
+    & #load{
+        font-family: 'Shrikhand', sans-serif;
+        align-items: center;
+        animation: logo-float 8s infinite;    
     }
-    50% {
-      opacity: 1;
-    }
-}
-@keyframes zoom-h {
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-    50% {
-      opacity: 1;
-    }
-}
+    
+    & #pulse-card{
+        display: flex;
+        align-items: center;
+  
+        & #pulse-1 {     
+            @include circle-anim;
+            background: $primaire;
+            box-shadow: 0 0 0 0 $primaire;
+            animation: pulsing 1.2s infinite;
+        }
+        & #pulse-2 {
+            @include circle-anim;
+            background: $secondaire;  
+            box-shadow: 0 0 0 0 $secondaire;
+            animation: pulsing 1.4s infinite;     
+        }
+        & #pulse-3 { 
+            @include circle-anim;
+            background: $tertiaire;
+            box-shadow: 0 0 0 0 $tertiaire;
+            animation: pulsing 1.6s infinite;      
+        }
+    }    
+  }

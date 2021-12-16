@@ -1,0 +1,57 @@
+@keyframes pulsing {
+    to {
+        box-shadow:0 0 0 15px #9256dc07;
+    }
+}
+@keyframes loading-opacity {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes logo-float {
+    0%{
+        transform: translateY(0px);
+        font-size: 1em;
+    }
+    50%{
+        transform: translateY(-350px);
+        opacity: 0;
+        font-size: 2.5em;
+    }
+}
+
+@keyframes slide-liste {
+    0%{
+        transform: translate3d(0, 20%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: none; 
+        opacity: 1;
+    }
+}
+@-webkit-keyframes zoom-h {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+}
+@keyframes zoom-h {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+}
