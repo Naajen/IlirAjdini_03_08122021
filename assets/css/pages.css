@@ -178,13 +178,13 @@ a:visited {
   }
   .menu-page ul .liste-page > div:first-child > h3:first-child {
     margin-bottom: 10px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   .menu-page ul .liste-page > div:first-child h4 {
-    font-size: 0.7em;
+    font-size: 0.75em;
     color: #7e7e7e;
     overflow: hidden;
     text-overflow: ellipsis;
